@@ -6,7 +6,6 @@
     <title>Tabela</title>
     <style>
         body{
-            background: darkgrey;
             font-family: Arial, Helvetica, sans-serif;
         }
 
@@ -14,25 +13,20 @@
             border-collapse: collapse;      
             padding: 10px;
             width: 400px;
+            height: 400px;
         }
-
-         tr {
-
-         }
-
-         tr.linha {
-            background-color: white;
-         }
-
 
          td {
             border: 1px solid black;
             padding: 10px;
+            text-align: center;
+            vertical-align: middle;
          }
 
-         td.dado {
-            background-color: yellow;
+         .numero {
+            text-align: right;
          }
+      
 
 
     </style>
@@ -48,13 +42,13 @@
         <tr class="linha">
             <td>a2</td>
             <td>b2</td>
-            <td>c2</td>
+            <td class="numero">c2</td>
         </tr>
 
         <tr>
             <td>A3</td>
             <td class="dado">b3</td>
-            <td>c3</td>
+            <td class="numero">c3</td>
         </tr>
 
 

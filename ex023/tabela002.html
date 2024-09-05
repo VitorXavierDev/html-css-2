@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="´t-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabela grandess</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead{
+            background-color: grey;
+            color: white;
+
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color:  grey;
+        }
+
+        tbody> tr:nth-child(odd) { /* 2n -1*/
+            background-color: aquamarine;
+        }
+        tbody > tr:nth-child(even) { /*2n*/
+            background-color: lightgray;
+        }
+
+        tfoot {
+            background-color: black;
+            color: white;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        #total {
+            text-align: center;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            background: grey;
+        }
+
+    </style>
+</head>
+<body>
+        <!--
+        anatomia para tabelas grandes
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+        -->
+
+        <table>
+            <caption>Cabeçalho da tabela</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 50px;">População</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">1.5000.40</td>
+                </tr>
+
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">1.1000.40</td>
+                </tr>
+
+                <tr>
+                    <td>Rio grande do Sul</td>
+                    <td class="num">60000.00</td>
+                </tr>
+
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">340000.00</td>
+                </tr>
+
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">1.5000.40</td>
+                </tr>
+
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">1.1000.40</td>
+                </tr>
+
+                <tr>
+                    <td>Rio grande do Sul</td>
+                    <td class="num">60000.00</td>
+                </tr>
+
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">340000.00</td>
+                </tr>
+
+
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">1.5000.40</td>
+                </tr>
+
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">1.1000.40</td>
+                </tr>
+
+                <tr>
+                    <td>Rio grande do Sul</td>
+                    <td class="num">60000.00</td>
+                </tr>
+
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">340000.00</td>
+                </tr>
+
+
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">1.5000.40</td>
+                </tr>
+
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">1.1000.40</td>
+                </tr>
+
+                <tr>
+                    <td>Rio grande do Sul</td>
+                    <td class="num">60000.00</td>
+                </tr>
+
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">340000.00</td>
+                </tr>
+
+
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">1.5000.40</td>
+                </tr>
+
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">1.1000.40</td>
+                </tr>
+
+                <tr>
+                    <td>Rio grande do Sul</td>
+                    <td class="num">60000.00</td>
+                </tr>
+
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">340000.00</td>
+                </tr>
+
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th scope="row">Total de habitantes</th>
+                    <td id="total"><strong>200000000</strong></td>
+                </tr>
+
+            </tfoot>
+
+        </table>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, nemo? Necessitatibus, blanditiis dicta mollitia recusandae ullam, voluptates quidem aliquid, iusto voluptatibus dolore facere eaque qui voluptas! Doloribus accusamus unde suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sit similique soluta aliquid exercitationem, sequi ratione nesciunt sed. Fuga doloribus culpa iure. Repellendus, repellat enim ipsa rerum voluptatibus illo sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, dolore beatae eos ducimus hic reiciendis rem enim quod adipisci exercitationem mollitia perferendis laboriosam deleniti praesentium eius, labore dolor velit nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorum voluptas ut voluptates dolorem animi quia, quibusdam dicta cum ipsam dolor sit tempora consequatur, itaque sint ullam assumenda distinctio doloribus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, fugit? Iusto distinctio quae culpa molestias laboriosam vitae libero illo, quam id assumenda tenetur placeat dicta eum consectetur nostrum repudiandae amet!</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, nemo? Necessitatibus, blanditiis dicta mollitia recusandae ullam, voluptates quidem aliquid, iusto voluptatibus dolore facere eaque qui voluptas! Doloribus accusamus unde suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sit similique soluta aliquid exercitationem, sequi ratione nesciunt sed. Fuga doloribus culpa iure. Repellendus, repellat enim ipsa rerum voluptatibus illo sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, dolore beatae eos ducimus hic reiciendis rem enim quod adipisci exercitationem mollitia perferendis laboriosam deleniti praesentium eius, labore dolor velit nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorum voluptas ut voluptates dolorem animi quia, quibusdam dicta cum ipsam dolor sit tempora consequatur, itaque sint ullam assumenda distinctio doloribus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, fugit? Iusto distinctio quae culpa molestias laboriosam vitae libero illo, quam id assumenda tenetur placeat dicta eum consectetur nostrum repudiandae amet!</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, nemo? Necessitatibus, blanditiis dicta mollitia recusandae ullam, voluptates quidem aliquid, iusto voluptatibus dolore facere eaque qui voluptas! Doloribus accusamus unde suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sit similique soluta aliquid exercitationem, sequi ratione nesciunt sed. Fuga doloribus culpa iure. Repellendus, repellat enim ipsa rerum voluptatibus illo sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, dolore beatae eos ducimus hic reiciendis rem enim quod adipisci exercitationem mollitia perferendis laboriosam deleniti praesentium eius, labore dolor velit nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorum voluptas ut voluptates dolorem animi quia, quibusdam dicta cum ipsam dolor sit tempora consequatur, itaque sint ullam assumenda distinctio doloribus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, fugit? Iusto distinctio quae culpa molestias laboriosam vitae libero illo, quam id assumenda tenetur placeat dicta eum consectetur nostrum repudiandae amet!</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, nemo? Necessitatibus, blanditiis dicta mollitia recusandae ullam, voluptates quidem aliquid, iusto voluptatibus dolore facere eaque qui voluptas! Doloribus accusamus unde suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sit similique soluta aliquid exercitationem, sequi ratione nesciunt sed. Fuga doloribus culpa iure. Repellendus, repellat enim ipsa rerum voluptatibus illo sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, dolore beatae eos ducimus hic reiciendis rem enim quod adipisci exercitationem mollitia perferendis laboriosam deleniti praesentium eius, labore dolor velit nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorum voluptas ut voluptates dolorem animi quia, quibusdam dicta cum ipsam dolor sit tempora consequatur, itaque sint ullam assumenda distinctio doloribus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, fugit? Iusto distinctio quae culpa molestias laboriosam vitae libero illo, quam id assumenda tenetur placeat dicta eum consectetur nostrum repudiandae amet!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, nemo? Necessitatibus, blanditiis dicta mollitia recusandae ullam, voluptates quidem aliquid, iusto voluptatibus dolore facere eaque qui voluptas! Doloribus accusamus unde suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sit similique soluta aliquid exercitationem, sequi ratione nesciunt sed. Fuga doloribus culpa iure. Repellendus, repellat enim ipsa rerum voluptatibus illo sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, dolore beatae eos ducimus hic reiciendis rem enim quod adipisci exercitationem mollitia perferendis laboriosam deleniti praesentium eius, labore dolor velit nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorum voluptas ut voluptates dolorem animi quia, quibusdam dicta cum ipsam dolor sit tempora consequatur, itaque sint ullam assumenda distinctio doloribus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, fugit? Iusto distinctio quae culpa molestias laboriosam vitae libero illo, quam id assumenda tenetur placeat dicta eum consectetur nostrum repudiandae amet!</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, nemo? Necessitatibus, blanditiis dicta mollitia recusandae ullam, voluptates quidem aliquid, iusto voluptatibus dolore facere eaque qui voluptas! Doloribus accusamus unde suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sit similique soluta aliquid exercitationem, sequi ratione nesciunt sed. Fuga doloribus culpa iure. Repellendus, repellat enim ipsa rerum voluptatibus illo sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, dolore beatae eos ducimus hic reiciendis rem enim quod adipisci exercitationem mollitia perferendis laboriosam deleniti praesentium eius, labore dolor velit nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorum voluptas ut voluptates dolorem animi quia, quibusdam dicta cum ipsam dolor sit tempora consequatur, itaque sint ullam assumenda distinctio doloribus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, fugit? Iusto distinctio quae culpa molestias laboriosam vitae libero illo, quam id assumenda tenetur placeat dicta eum consectetur nostrum repudiandae amet!</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, nemo? Necessitatibus, blanditiis dicta mollitia recusandae ullam, voluptates quidem aliquid, iusto voluptatibus dolore facere eaque qui voluptas! Doloribus accusamus unde suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sit similique soluta aliquid exercitationem, sequi ratione nesciunt sed. Fuga doloribus culpa iure. Repellendus, repellat enim ipsa rerum voluptatibus illo sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, dolore beatae eos ducimus hic reiciendis rem enim quod adipisci exercitationem mollitia perferendis laboriosam deleniti praesentium eius, labore dolor velit nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorum voluptas ut voluptates dolorem animi quia, quibusdam dicta cum ipsam dolor sit tempora consequatur, itaque sint ullam assumenda distinctio doloribus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, fugit? Iusto distinctio quae culpa molestias laboriosam vitae libero illo, quam id assumenda tenetur placeat dicta eum consectetur nostrum repudiandae amet!</p>
+
+</body>
+</html>
